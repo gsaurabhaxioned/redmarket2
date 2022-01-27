@@ -1,13 +1,4 @@
-@charset "utf-8";
-/* ==========================================================================
-   1. CSS Reset Code
-   ========================================================================== */
 
-/* 1.1. Eric Meyers Reset
-   http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-   ========================================================================== */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
@@ -132,9 +123,18 @@ header .wrapper {
   font-size: 23px;
   letter-spacing: 1px;
 }
-
-.hamburger {
+.hamburger,.cross{
+  text-indent: -9999px;
   display: none;
+}
+.hamburger::before,.cross::before {
+  content: "\f0c9";
+  font-family: "fontAwesome";
+  float: right;
+  text-indent: 0;
+}
+.cross::before {
+  content: "\f00d";
 }
 .header-menus {
   flex-basis: 65%;
@@ -203,12 +203,13 @@ text-align: center;
 .photos {
   margin-top: 38px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 /* etium-rhoncus styling ends here  */
 /* ultrices section starts here  */
 .ultrices {
-  padding-bottom: 70px;
+  padding-bottom: 29px;
   border-bottom: 1px solid #000000;
 }
 .ultrices .wrapper {
@@ -239,21 +240,33 @@ text-align: center;
 .ultrices-list li a {
   color: #000000;
 }
-.ultrices-blog ul {
-  display: flex;
-}
 .month,.date {
   display: block;
+  color: #ffffff;
   text-align: center;
 }
 .month {
-  color: #ffffff;
-  
+  font-size: 10px;
 }
-.ultrices-blog ul li a {
-  padding: 18px;
+.date {
+  font-size: 21px;
+}
+.event {
+  margin-bottom: 57px;
+  display: flex;
+  column-gap: 17px;
+}
+.event li a {
+  padding: 20px;
   border-radius: 5px;
   background: #000000;
+} 
+.event li .date-heading {
+  font-size: 13px;
+}
+.event li .date-info {
+  margin-top: 5px;
+  font-size: 12px;
 }
 /* ultrices section styling ends here  */
 /* welcome section styling starts here  */
@@ -298,9 +311,48 @@ footer p {
 =================================*/ 
 
 /*media query starts*/
+/* media query for 1024px starts here  */
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    width: 70%;
+  }
+  .photo {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-
-
-
+  
+  header {
+    position: relative;
+  }
+  .header-menus ul {
+    margin: 0;
+  }
+  .header-menus ul li {
+    text-align: left;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+  .header-menus {
+    display: none;
+  }
+  header .wrapper,.header-menus ul,.ultrices .wrapper,.event {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .banner .wrapper h2 {
+    top: 0;
+    left: 60%;
+    color: #ff0000;
+    font-size: 17px;
+  }
+}
+  /*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  .banner .wrapper h2 {
+    font-size: 14px;
+  }
 }  
