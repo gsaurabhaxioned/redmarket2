@@ -1,11 +1,84 @@
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -15,22 +88,35 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
-input[type='button'],
-input[type='submit'],
+input[type="button"],
+input[type="submit"],
 button {
   cursor: pointer;
 }
@@ -41,7 +127,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   width: 100%;
@@ -57,8 +145,12 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
 
 /* 1.2. Clear Fix
    ========================== */
@@ -69,8 +161,12 @@ sub { bottom: -.25em; }
   content: " ";
 }
 
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
 
 /*for all*/
 body {
@@ -78,7 +174,7 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
   text-decoration: none;
 }
@@ -92,7 +188,7 @@ li {
   font-weight: bold;
 }
 .font-faint {
-  opacity: 0,5;
+  opacity: 0, 5;
 }
 .font-red {
   color: #ff0000;
@@ -102,7 +198,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 52%; 
+  width: 52%;
   margin: 0 auto;
 }
 /*=================================
@@ -123,11 +219,14 @@ header .wrapper {
   font-size: 23px;
   letter-spacing: 1px;
 }
-.hamburger,.cross{
-  text-indent: -9999px;
+.hamburger,
+.cross {
+  margin-right: 100%;
   display: none;
+  text-indent: -9999px;
 }
-.hamburger::before,.cross::before {
+.hamburger::before,
+.cross::before {
   content: "\f0c9";
   font-family: "fontAwesome";
   float: right;
@@ -147,22 +246,21 @@ header .wrapper {
   display: flex;
 }
 .header-menus ul li {
-flex-basis: 20%;
-text-align: center;
+  flex-basis: 20%;
+  text-align: center;
 }
 .header-menus ul li a {
-  padding: 10px;
+  padding: 14px 11px;
+  color: #ffffff;
 }
 .header-menus ul li a:hover {
-  border-radius: 3px;
+  border-radius: 5px;
   background: #ff0000;
 }
 
-
-
 /*=================================
   Header styling ends here
-=================================*/  
+=================================*/
 
 /*=================================
   main styling starts here
@@ -171,11 +269,11 @@ text-align: center;
 /* banner styling starts here  */
 
 .banner::before {
-  content: '';
+  content: "";
   height: 8px;
   width: 100%;
   position: absolute;
-  background-color: #ff0000;  
+  background-color: #ff0000;
 }
 .banner .wrapper h2 {
   width: 31%;
@@ -210,19 +308,19 @@ text-align: center;
 /* ultrices section starts here  */
 .ultrices {
   padding-bottom: 29px;
-  border-bottom: 1px solid #000000;
 }
 .ultrices .wrapper {
   display: flex;
   justify-content: space-between;
   column-gap: 40px;
+  border-bottom: 1px solid #c4c1b7;
 }
 .ultrices-header {
   width: 88%;
+  padding-bottom: 33px;
   display: block;
   font-weight: bold;
   font-size: 16px;
-  padding-bottom: 33px;
 }
 .ultrices-blog {
   flex-basis: 30%;
@@ -232,15 +330,20 @@ text-align: center;
 }
 .ultrices-list li {
   width: 100%;
-  display: inline-block;
   padding: 10px 0;
-  border-bottom: 1px solid #343634;
+  display: inline-block;
+  border-bottom: 1px solid #c4c1b7;
   font-size: 12px;
+  text-decoration: underline;
+}
+.ultrices-list li:last-child {
+  border: none;
 }
 .ultrices-list li a {
   color: #000000;
 }
-.month,.date {
+.month,
+.date {
   display: block;
   color: #ffffff;
   text-align: center;
@@ -260,9 +363,10 @@ text-align: center;
   padding: 20px;
   border-radius: 5px;
   background: #000000;
-} 
+}
 .event li .date-heading {
   font-size: 13px;
+  opacity: 0.6;
 }
 .event li .date-info {
   margin-top: 5px;
@@ -280,7 +384,7 @@ text-align: center;
 }
 .welcome .wrapper p {
   font-size: 11px;
-  word-spacing: 2px;
+  word-spacing: 1px;
   line-height: 23px;
 }
 /* welcome section styling ends here  */
@@ -291,7 +395,7 @@ text-align: center;
 
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
 footer {
   padding-top: 66px;
   padding-bottom: 80px;
@@ -299,33 +403,38 @@ footer {
   text-align: center;
 }
 footer p {
+  color: #ffffff;
   font-size: 9px;
   letter-spacing: 1px;
+  opacity: 0.5;
 }
 
-
-
-
- /*=================================
+/*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
 
 /*media query starts*/
+
 /* media query for 1024px starts here  */
 @media only screen and (max-width: 1024px) {
   .wrapper {
     width: 70%;
   }
+
+  .photos {
+    justify-content: center;
+  }
   .photo {
-    width: 100%;
-    margin-top: 20px;
+    flex-basis: 30%;
   }
 }
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-  
   header {
     position: relative;
+  }
+  .header-menus {
+    display: none;
   }
   .header-menus ul {
     margin: 0;
@@ -333,13 +442,16 @@ footer p {
   .header-menus ul li {
     text-align: left;
   }
+  .header-menus ul li a {
+    color: #ff0000;
+  }
   .hamburger {
     display: inline-block;
   }
-  .header-menus {
-    display: none;
-  }
-  header .wrapper,.header-menus ul,.ultrices .wrapper,.event {
+  header .wrapper,
+  .header-menus ul,
+  .ultrices .wrapper,
+  .event {
     flex-direction: column;
     row-gap: 20px;
   }
@@ -350,9 +462,9 @@ footer p {
     font-size: 17px;
   }
 }
-  /*media query for 768px starts here*/
+/*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
   .banner .wrapper h2 {
     font-size: 14px;
   }
-}  
+}
