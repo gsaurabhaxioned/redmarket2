@@ -319,8 +319,8 @@ header .wrapper {
   width: 88%;
   padding-bottom: 33px;
   display: block;
-  font-weight: bold;
   font-size: 16px;
+  font-weight: bold;
 }
 .ultrices-blog {
   flex-basis: 30%;
@@ -331,8 +331,8 @@ header .wrapper {
 .ultrices-list li {
   width: 100%;
   padding: 10px 0;
-  display: inline-block;
   border-bottom: 1px solid #c4c1b7;
+  display: inline-block;
   font-size: 12px;
   text-decoration: underline;
 }
@@ -384,8 +384,8 @@ header .wrapper {
 }
 .welcome .wrapper p {
   font-size: 11px;
-  word-spacing: 1px;
   line-height: 23px;
+  word-spacing: 1px;
 }
 /* welcome section styling ends here  */
 
