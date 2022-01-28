@@ -283,6 +283,7 @@ header .wrapper {
   color: #ffffff;
   font-size: 28px;
   line-height: 41px;
+  text-align: center;
 }
 /* banner styling ends here  */
 /* etium-rhoncus styling starts here   */
@@ -415,6 +416,16 @@ footer p {
 
 /*media query starts*/
 
+
+
+
+  /*media query for 768px starts here*/
+  @media only screen and (max-width: 1440px) {
+    .banner .wrapper h2 {
+      top: 20%;
+    }
+  }
+
 /* media query for 1024px starts here  */
 @media only screen and (max-width: 1024px) {
   .wrapper {
@@ -428,6 +439,7 @@ footer p {
     flex-basis: 30%;
   }
 }
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
   header {
@@ -435,6 +447,7 @@ footer p {
   }
   .header-menus {
     display: none;
+    z-index: 2;
   }
   .header-menus ul {
     margin: 0;
@@ -443,7 +456,7 @@ footer p {
     text-align: left;
   }
   .header-menus ul li a {
-    color: #ff0000;
+    color: #000000;
   }
   .hamburger {
     display: inline-block;
@@ -455,16 +468,20 @@ footer p {
     flex-direction: column;
     row-gap: 20px;
   }
-  .banner .wrapper h2 {
-    top: 0;
-    left: 60%;
-    color: #ff0000;
-    font-size: 17px;
+  .banner figure{
+    height: 100%;
   }
-}
-/*media query for 768px starts here*/
-@media only screen and (max-width: 768px) {
   .banner .wrapper h2 {
-    font-size: 14px;
-  }
+    top: 30%;
+    left: 0;
+    width: 100%;
+    font-size: 24px;
 }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .banner .wrapper h2 {
+      top: 30%;
+     font-size: 15px;
+    }
+  }
