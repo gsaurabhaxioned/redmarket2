@@ -442,27 +442,8 @@ footer p {
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-  header {
-    position: relative;
-  }
-  .header-menus {
-    display: none;
-    z-index: 2;
-  }
-  .header-menus ul {
-    margin: 0;
-  }
-  .header-menus ul li {
-    text-align: left;
-  }
-  .header-menus ul li a {
-    color: #000000;
-  }
-  .hamburger {
-    display: inline-block;
-  }
-  header .wrapper,
-  .header-menus ul,
+ 
+ 
   .ultrices .wrapper,
   .event {
     flex-direction: column;
@@ -472,7 +453,7 @@ footer p {
     height: 100%;
   }
   .banner .wrapper h2 {
-    top: 30%;
+    top: 20%;
     left: 0;
     width: 100%;
     font-size: 24px;
@@ -483,5 +464,29 @@ footer p {
     .banner .wrapper h2 {
       top: 30%;
      font-size: 15px;
+    }
+    header {
+      position: relative;
+    }
+    .header-menus {
+      display: none;
+      z-index: 2;
+    }
+    .header-menus ul {
+      margin: 0;
+    }
+    .header-menus ul li {
+      text-align: left;
+    }
+    .header-menus ul li a {
+      color: #000000;
+    }
+    .hamburger {
+      display: inline-block;
+    }
+    header .wrapper,
+    .header-menus ul {
+      flex-direction: column;
+    row-gap: 20px;
     }
   }
